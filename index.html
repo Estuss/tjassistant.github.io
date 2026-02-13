@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логотип  TJ</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        .bimi-info {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.svg" alt="Логотип компании" class="logo" id="mainLogo">
+        <h1>TJ Assisant</h1>
+        <p>Этот логотип используется для BIMI (Brand Indicators for Message Identification)</p>
+        
+        <div class="bimi-info">
+            <strong>Информация для BIMI:</strong><br>
+            SVG логотип: <span id="logoUrl">https://yourusername.github.io/logo.svg</span><br>
+            Версия: SVG 1.2 Tiny<br>
+            Размер: &lt; 32KB<br>
+            Формат: Квадрат 1:1
+        </div>
+    </div>
+
+    <script>
+        const baseUrl = window.location.origin;
+        document.getElementById('logoUrl').textContent = baseUrl + '/logo.svg';
+    </script>
+</body>
+</html>
